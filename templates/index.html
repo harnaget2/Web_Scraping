@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARS BITCHES</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div clas="container">
+    <div class="jumbotron text-center">
+      <h1>Current Mars Data</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape!</a></p>
+    </div>
+      
+<h2>Mars News!!!</h2>
+<p>
+{{ mars.mars_news_title }} {{ mars.news_title }}
+{{ mars.mars_news_text }} {{ mars.news_p }}
+</p>
+
+<h2>Mars Weather on the 9s!!!</h2>
+<p>
+{{ mars.weather }} {{ mars.mars_weather }}
+</p>
+
+<center>
+<h4>Mars Mission Featured Image</h4>
+<img src= {{ mars.featured_image_link }}></img>
+</center>
+
+<h5>Mars has a lot of facts!</h5>
+<p> {{ mars.table }} </p>
+
+</ul>
+</body>
+</html>
+
